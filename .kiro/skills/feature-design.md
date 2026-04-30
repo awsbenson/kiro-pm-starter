@@ -5,10 +5,20 @@ description: Feature design and prototype workflow. Use when a PM receives a cus
 
 # Feature Design Workflow
 
-## The Pipeline
+## The Real PM Pipeline
 
 ```
-Customer ask → Requirements → Design spec → Prototype → Engineering handoff
+1. PM receives a customer ask for a feature
+         ↓
+2. PM plans the feature (requirements, scope, priority)
+         ↓
+3. PM drafts the flow (user journey, UI/UX, screen descriptions)
+   ← This is where AI tools help: Figma AI, Lovable, GitHub, Jira
+   ← Kiro produces the structured spec that makes these tools work well
+         ↓
+4. PM delivers a POC/prototype to communicate the idea to engineers
+   ← Kiro generates a working HTML prototype from the spec
+   ← PM iterates in plain language, no coding required
 ```
 
 ## Step 1: Structure the Ask

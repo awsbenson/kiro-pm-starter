@@ -111,3 +111,104 @@ Update the project register with this initiative:
 
 Include: owner, stakeholders, status, dependencies, milestones, risks.
 ```
+
+## --- MCP CRUD Operations ---
+
+## Jira: Create Ticket from Spec
+```
+Create a Jira ticket in project [PROJECT_KEY] from this requirements spec:
+- Summary: [one-line feature name]
+- Description: use the requirements.md content
+- Type: Story
+- Priority: [P1/P2/P3]
+- Add acceptance criteria as a checklist in the description
+```
+
+## Jira: Search & Read
+```
+Search Jira for open tickets assigned to me in project [PROJECT_KEY].
+Show: key, summary, status, priority. Sort by priority.
+```
+
+## Jira: Update Status
+```
+Move ticket [PROJ-123] to "In Progress" and add a comment:
+"Starting implementation — targeting completion by [date]."
+```
+
+## Jira: Add Sub-tasks from Tasks.md
+```
+For ticket [PROJ-123], create sub-tasks from the tasks.md file.
+Each task becomes a sub-task with:
+- Summary from the task title
+- Description from the task details
+- Estimate from the effort field
+```
+
+## Confluence: Create Page from Spec
+```
+Create a Confluence page in space [SPACE_KEY] titled "[Feature Name] — Design Spec".
+Use the content from design.md. Format with proper headings and code blocks.
+Add a table of contents at the top.
+```
+
+## Confluence: Read & Summarize
+```
+Get the Confluence page "[page title]" and summarize the key decisions
+and action items in bullet points.
+```
+
+## Confluence: Update Page
+```
+Update the Confluence page "[page title]" — add a new section at the bottom:
+## Status Update — [today's date]
+[PASTE YOUR UPDATE]
+```
+
+## Slack: Send Update
+```
+Send a message to #[channel-name]:
+"[Feature Name] update: [your message].
+Next steps: [action items]."
+```
+
+## Slack: Search Context
+```
+Search Slack for recent messages about "[topic]" in the last 7 days.
+Summarize the key points and any decisions made.
+```
+
+## Email: Draft Stakeholder Update
+```
+Draft an email to [recipient]:
+Subject: [Feature Name] — Status Update
+Tone: [executive/technical/customer-facing]
+Include: current status, next steps, any blockers, timeline.
+
+Context:
+[PASTE RELEVANT CONTEXT]
+```
+
+## PowerPoint: Generate Stakeholder Deck
+```
+Generate a PowerPoint presentation for [audience]:
+Topic: [feature/project name]
+Include:
+- Executive summary (3-5 bullets)
+- [Bar/Line/Pie] chart showing [data description]
+- User flow diagram for [workflow]
+- Timeline with [N] phases
+- "The Ask" slide
+
+Style: Professional, minimal text, AWS dark blue headers.
+Run the script to produce the .pptx file.
+```
+
+## PowerPoint: Update Existing Deck
+```
+Read the presentation at [filename.pptx] and:
+- Update slide [N] with new data: [describe changes]
+- Add a new slide after slide [N] showing [content]
+- Update the timeline to reflect [new dates]
+Regenerate the .pptx.
+```

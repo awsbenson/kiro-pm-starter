@@ -20,6 +20,7 @@
       ]
     },
     "slack": {
+      "disabled": true,
       "command": "npx",
       "args": ["-y", "@anthropic/slack-mcp-server"],
       "env": {
@@ -30,6 +31,7 @@
       ]
     },
     "github": {
+      "disabled": true,
       "command": "npx",
       "args": ["-y", "@anthropic/github-mcp-server"],
       "env": {

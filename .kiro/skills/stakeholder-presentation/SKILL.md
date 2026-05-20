@@ -47,28 +47,38 @@ pip install python-pptx
 
 ## Example Prompts
 
-**Executive feature pitch:**
+**One feature → VP deck:**
 ```
-Create a PowerPoint presentation for my VP about a new bulk alert suppression feature.
-Include: executive summary, user flow diagram, cost/benefit chart (saves 2 hours/shift
-for 50 SOC analysts at $75/hr), competitive comparison bar chart, and a 3-phase
-implementation timeline. Make it executive-ready — minimal text, strong visuals.
-```
-
-**Engineering kickoff:**
-```
-Create a PowerPoint for the engineering kickoff of the detection rule optimizer.
-Include: architecture diagram showing the data pipeline, a bar chart of current
-vs projected false positive rates, user flow for the rule tuning workflow, and
-a task breakdown timeline with 3 sprints.
+Create a PowerPoint presentation for my VP about the bulk alert suppression feature.
+Include: executive summary, cost/benefit chart (saves 2 hours/shift for 50 analysts
+at $75/hr), 3-phase timeline, and "The Ask" slide (approve P1 for Q3).
+Tone: executive-ready, no jargon, lead with business impact.
 ```
 
-**Customer business review:**
+**Same feature → Engineering kickoff deck:**
+```
+Create a PowerPoint for the engineering kickoff of bulk alert suppression.
+Include: architecture diagram showing rule engine + API + UI components,
+bar chart of current vs projected false positive rates, user flow for the
+rule creation workflow, and sprint breakdown (3 sprints, 9 weeks).
+Tone: technical, include data model and API endpoints.
+```
+
+**Same feature → Customer QBR deck:**
 ```
 Create a PowerPoint for a quarterly business review with Customer Alpha.
-Include: a line chart showing incident response time improvement over 4 quarters,
-a pie chart of ticket categories, a roadmap of upcoming features relevant to them,
-and a summary slide with renewal talking points.
+Include: feature overview (what's coming), timeline for availability,
+what changes for their SOC team, and a line chart showing projected
+alert reduction over 3 months post-launch.
+Tone: customer-facing, focus on their outcomes, no internal details.
+```
+
+**Same feature → Sales battlecard deck:**
+```
+Create a PowerPoint for the sales team about bulk alert suppression.
+Include: competitive comparison (we have it, competitors don't),
+customer talking points, demo script outline, and objection handling.
+Tone: sales-ready, focus on differentiation and urgency.
 ```
 
 ## Output Guidelines

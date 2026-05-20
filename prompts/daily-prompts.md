@@ -204,6 +204,26 @@ Style: Professional, minimal text, AWS dark blue headers.
 Run the script to produce the .pptx file.
 ```
 
+## PowerPoint: Same Feature → Multiple Audiences
+```
+I need presentations for the same feature but different audiences.
+Feature: [feature name from requirements.md]
+
+Generate THREE separate PowerPoint decks:
+
+1. VP deck: cost/benefit, ROI, timeline, "approve P1" ask.
+   Tone: no jargon, lead with business impact.
+
+2. Engineering deck: architecture diagram, data model, sprint plan.
+   Tone: technical, include API endpoints and dependencies.
+
+3. Customer deck: feature overview, timeline, what changes for them.
+   Tone: customer-facing, focus on their outcomes.
+
+Use the communication-standards steering rules for tone.
+Generate each as a separate .pptx file.
+```
+
 ## PowerPoint: Update Existing Deck
 ```
 Read the presentation at [filename.pptx] and:

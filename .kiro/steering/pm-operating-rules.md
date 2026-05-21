@@ -29,3 +29,9 @@ An escalation is closed only when:
 - Fix or workaround confirmed
 - Follow-up items tracked in backlog
 - Account team confirms risk reduced
+
+## When to Use Vibe vs Spec
+
+- **Vibe** (default): exploring ideas, drafting emails, generating prototypes, quick questions
+- **Spec**: when output needs formal acceptance criteria, engineering handoff, or traceability
+- Rule of thumb: start with vibe. Switch to spec when others need to act on your output.

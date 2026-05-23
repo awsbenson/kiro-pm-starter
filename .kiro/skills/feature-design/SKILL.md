@@ -1,72 +1,66 @@
 ---
 name: feature-design
-description: Feature design and prototype workflow. Use when a PM receives a customer feature request and needs to plan, design, and prototype it.
+description: Feature design and prototype workflow. Use when a PM receives a customer feature request, wants to prototype a UI change, or needs to plan a feature. ALWAYS ask the clarifying questions before generating any prototype code.
 ---
 
-# Feature Design Workflow
+# Feature Design & Prototype Workflow
 
-## The Real PM Pipeline
+## IMPORTANT: Ask Before Building
 
-```
-1. PM receives a customer ask for a feature
-         ↓
-2. PM plans the feature (requirements, scope, priority)
-         ↓
-3. PM drafts the flow (user journey, UI/UX, screen descriptions)
-   Kiro produces structured specs and design documents ready for handoff
-         ↓
-4. PM delivers a POC/prototype to communicate the idea to engineers
-   Kiro generates a working HTML prototype — PM iterates in plain language
-```
+When a PM asks to create a prototype or implement a feature change, DO NOT start coding immediately. First, ask these questions to ensure the prototype is useful:
 
-**Plus**: Kiro connects to Jira, Confluence, GitHub and other tools via MCP —
-create tickets, update docs, and link specs without leaving your workspace.
+### Questions to Ask the PM
 
-## Step 1: Structure the Ask
+1. **Who is this for?**
+   - Which customer or user role requested this?
+   - Will you show this to the customer, to engineering, or both?
 
-Use `/plan` with the customer request. Answer:
-- What problem does this solve?
-- Who are the users? What's their current workflow?
-- What's the business impact? (revenue, retention, competitive)
-- What are the constraints? (timeline, tech, resources)
-- What's in scope vs out of scope?
+2. **What's the current state?**
+   - What does the user see/do today?
+   - What's the pain point with the current flow?
 
-## Step 2: Requirements
+3. **What should change?**
+   - Describe the desired behavior in plain language
+   - Any specific UI elements? (button, dropdown, table, dialog, page)
 
-Output `requirements.md` with:
-- User stories: "As a [role], I want [action] so that [benefit]"
-- Acceptance criteria for each story
-- Business impact analysis
-- Priority (P0-P3)
-- Dependencies and risks
+4. **Scope boundaries:**
+   - Is this a modification to an existing page or a new page?
+   - What should NOT change? (preserve existing behavior)
 
-## Step 3: Design Spec
+5. **Visual expectations:**
+   - Should it match the existing dark theme?
+   - Any specific layout preferences? (sidebar, modal, inline)
+   - Reference any existing component as a style guide?
 
-Output `design.md` with:
-- User journey (step-by-step from user's perspective)
-- Screen descriptions (what each screen shows, what user can do)
-- Data flow (what data moves where)
-- Edge cases (errors, empty states, permissions)
-- Technical approach (API endpoints, data model)
+### When to Skip Questions
 
-## Step 4: Prototype
+Skip and start immediately if the PM:
+- Already provided detailed context (all 5 areas covered)
+- Says "just do it" or "quick change"
+- Is iterating on an existing prototype (follow-up prompt)
 
-Ask Kiro to generate a working prototype:
-- "Create an HTML prototype of this feature based on the design spec"
-- Iterate with plain language: "make the button bigger", "add a loading state"
-- Screenshot or record for engineering handoff
+## After Getting Answers → Build the Prototype
 
-## Step 5: Engineering Handoff
+1. Generate a working React component that matches the project's conventions
+2. Use the steering file for theme/style guidance
+3. Make it interactive (buttons click, forms work, states change)
+4. Include realistic sample data
+5. Tell the PM: "Open your browser — the change should appear via hot-reload"
 
-Output `tasks.md` with:
-- Ordered task breakdown
-- Each task has: description, acceptance criteria, effort estimate
-- Dependencies between tasks
-- What the prototype demonstrates vs what needs real implementation
+## Iteration Loop
 
-## Quality Check
-- [ ] Every user story has acceptance criteria?
-- [ ] Prototype matches the requirements?
-- [ ] Edge cases documented?
-- [ ] Engineering handoff has no ambiguity?
-- [ ] Business impact quantified?
+After the first version, the PM will iterate:
+- "Make the button a dropdown instead"
+- "Add a confirmation dialog"
+- "Show a count badge"
+- "Change the color to match severity levels"
+
+Each iteration: modify the component, browser hot-reloads, PM sees the result.
+
+## When the PM is Satisfied
+
+Ask: "Would you like me to:"
+- Show this to your customer? (screenshot / share screen ready)
+- Create an engineering handoff? (what to build for real)
+- Create a Jira ticket from this? (via MCP)
+- Generate a stakeholder presentation about this feature?

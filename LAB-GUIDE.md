@@ -1,5 +1,39 @@
 # Kiro PM Workshop — Lab Guide
 
+## ⚠️ Important: Copy & Paste in DCV
+
+Your lab runs in a remote desktop (DCV). Copy/paste works differently than normal:
+
+### Pasting text FROM your laptop INTO the remote desktop
+
+1. **Copy** the text on your laptop as usual (Ctrl+C / Cmd+C)
+2. **Click inside the DCV window** (the remote desktop)
+3. Use **Ctrl+Shift+V** to paste (NOT Ctrl+V)
+
+> 💡 You'll need this immediately to paste your **password** at login.
+
+### Copying text FROM the remote desktop TO your laptop
+
+1. Select text in the remote desktop
+2. Use **Ctrl+Shift+C** to copy (NOT Ctrl+C)
+3. Switch to your laptop — it's now in your clipboard
+
+### If paste doesn't work
+
+- Try the DCV clipboard panel: click the **clipboard icon** (📋) in the DCV toolbar on the left side
+- Paste your text into that panel → it becomes available inside the remote desktop
+- Then use Ctrl+V normally inside the remote desktop
+
+### Quick Reference
+
+| Direction | Shortcut |
+|---|---|
+| Laptop → Remote Desktop | Ctrl+Shift+V |
+| Remote Desktop → Laptop | Ctrl+Shift+C |
+| Inside remote desktop (normal) | Ctrl+C / Ctrl+V (works as usual) |
+
+---
+
 ## Your Lab Environment
 
 | Item | Value |

@@ -1,5 +1,27 @@
 # Kiro PM Workshop — Lab Guide
 
+## Table of Contents
+
+1. [Copy & Paste in DCV](#-important-copy--paste-in-dcv)
+2. [Your Lab Environment](#your-lab-environment)
+3. [Lab Overview](#lab-overview)
+4. [Troubleshooting](#troubleshooting-environment-setup)
+   - DCV Connection
+   - Kiro IDE
+   - Terminal
+   - Dev Server
+   - Browser
+5. [Setup (9:10–9:20)](#setup-910920)
+6. [Module 1: Requirements (9:20–10:20)](#module-1-customer-ask--requirements-920-1020)
+7. [Module 2: Steering + Skills (10:35–10:45)](#module-2-steering--skills-1035-1045)
+8. [Module 3: Prototype (10:45–12:00)](#module-3-prototype-1045-1200)
+9. [Module 3 cont'd: Polish (13:00–14:15)](#module-3-contd-iterate--polish-1300-1415)
+10. [Module 4: Capstone (14:30–15:30)](#module-4-capstone--full-pipeline-1430-1530)
+11. [Show & Tell (15:30–16:00)](#show--tell-1530-1600)
+12. [Quick Reference](#quick-reference)
+
+---
+
 ## ⚠️ Important: Copy & Paste in DCV
 
 Your lab runs in a remote desktop (DCV). Copy/paste works differently than normal:

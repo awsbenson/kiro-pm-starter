@@ -45,6 +45,20 @@ Your lab runs in a remote desktop (DCV). Copy/paste works differently than norma
 
 ---
 
+## Lab Overview
+
+| Module | Lab | What You Produce | Time |
+|---|---|---|---|
+| Setup | Connect + Start Dev Server | Running app in browser | 10 min |
+| Module 1: Requirements | Customer Ask → Structured Requirements | `requirements.txt` | 45 min |
+| Module 2: Steering | Try With vs Without (micro-exercise) | Understanding of skills | 2 min |
+| Module 3: Prototype | Build a New Feature Page | Working React page | 75 min |
+| Module 3 cont'd: Polish | Iterate to Production Quality | Polished prototype | 75 min |
+| Module 4: Capstone | Full Pipeline (new scenario) | Requirements + Prototype + Handoff | 60 min |
+| Show & Tell | Share + Engineering Handoff | Handoff summary | 30 min |
+
+---
+
 ## Troubleshooting: Environment Setup
 
 ### Can't connect to DCV

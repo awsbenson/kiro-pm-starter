@@ -75,8 +75,10 @@ Your lab runs in a remote desktop (DCV). Copy/paste works differently than norma
 
 | Problem | Fix |
 |---|---|
+| First launch is slow (~30s) | **This is normal.** Kiro loads extensions on first start. Wait for it. |
 | Kiro won't open | Double-click the desktop icon. If nothing happens, open Terminal and type: `kiro` |
 | "Sign in required" | Click "Sign In" → use your AWS Builder ID (create one at https://profile.aws.amazon.com if needed) |
+| Sign-in page doesn't open | Open Chromium manually, then retry sign-in in Kiro |
 | Chat panel not visible | Press `Ctrl+L` to toggle it |
 | Kiro not responding | Check bottom status bar for connection status. Try: close chat tab, reopen with Ctrl+L |
 | "No workspace open" | File → Open Folder → select `/home/YOUR-USERNAME/kiro-pm-starter` |
@@ -120,9 +122,11 @@ Your lab runs in a remote desktop (DCV). Copy/paste works differently than norma
 ### Step 2: Open Kiro IDE
 
 1. Double-click **Kiro** on the desktop
-2. Sign in with your AWS Builder ID
-3. The `kiro-pm-starter` project should open automatically
-4. If not: File → Open Folder → `/home/YOUR-USERNAME/kiro-pm-starter`
+2. ⏱ **First launch takes ~30 seconds** — this is normal, wait for it
+3. When Kiro opens, click **Sign In**
+4. A browser tab opens → sign in with your AWS Builder ID
+5. Come back to Kiro — it should show the welcome screen
+6. If the project isn't open: File → Open Folder → `/home/YOUR-USERNAME/kiro-pm-starter`
 
 ### Step 3: Start the dev server
 

@@ -51,3 +51,9 @@ variable "use_spot" {
   type        = bool
   default     = false
 }
+
+variable "custom_ami" {
+  description = "Custom AMI ID (pre-built lab image). If set, skips user-data script."
+  type        = string
+  default     = ""
+}

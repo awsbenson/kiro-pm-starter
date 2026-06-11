@@ -205,7 +205,7 @@ resource "aws_iam_role_policy_attachment" "ssm" {
 resource "aws_instance" "kiro_ide" {
   count = var.pm_count
 
-  ami                    = data.aws_ami.ubuntu.id
+  ami                    = var.custom_ami != "" ? var.custom_ami : data.aws_ami.ubuntu.id
   instance_type          = var.instance_type
   key_name               = aws_key_pair.main.key_name
   subnet_id              = aws_subnet.public.id
@@ -220,7 +220,10 @@ resource "aws_instance" "kiro_ide" {
     volume_type = "gp3"
   }
 
-  user_data = templatefile("${path.module}/scripts/setup.sh", {
+  user_data = var.custom_ami != "" ? templatefile("${path.module}/scripts/setup-ami.sh", {
+    pm_name     = var.pm_names[count.index]
+    pm_password = random_password.pm_passwords[count.index].result
+  }) : templatefile("${path.module}/scripts/setup.sh", {
     pm_name          = var.pm_names[count.index]
     pm_password      = random_password.pm_passwords[count.index].result
     starter_kit_repo = var.starter_kit_repo

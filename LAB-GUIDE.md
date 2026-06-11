@@ -428,7 +428,7 @@ Open `scenarios/` in your project and read the capstone scenario. Or the trainer
 | Ctrl+Z | Undo in editor |
 | Ctrl+Shift+V | Paste from your laptop |
 | Ctrl+Shift+C | Copy to your laptop |
-| # | Attach context to prompt (files, steering) |
+| # | Attach files as context (e.g., requirements.txt) |
 
 ### Useful Prompts
 

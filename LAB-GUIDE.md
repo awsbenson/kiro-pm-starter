@@ -220,25 +220,23 @@ I have a new feature request from a customer. Here's what they said:
 
 Kiro will ask you clarifying questions (because of the feature-design skill). Answer them naturally — pretend you're the PM who owns this feature.
 
-### Step 4: Review the output
+### Step 4: Ask for requirements
 
-After you answer the questions, Kiro will produce structured output. It might:
-- Generate requirements directly in the chat
-- Ask what you'd like next (prototype, proposal, or requirements doc)
+After answering Kiro's questions, it will ask what you'd like next. Type:
 
-If Kiro gives you options, choose **requirements first** — this is the foundation for the prototype later.
-
-### Step 5: Save the requirements
-
-If Kiro produced requirements in the chat, tell it:
 ```
-Save these requirements to a file called requirements.txt
+Write a structured requirements document based on our conversation. Include: user stories with acceptance criteria, scope (in/out), priority, and business impact.
 ```
 
-If Kiro didn't produce a requirements doc yet, ask:
+### Step 5: Save to file
+
+Once Kiro produces the requirements in the chat, type:
+
 ```
-Before we build anything, write a requirements document with user stories, acceptance criteria, scope, and priority. Save it as requirements.txt.
+Save this to requirements.txt
 ```
+
+Check your file explorer — `requirements.txt` should appear in the project.
 
 ### ✅ Checkpoint
 

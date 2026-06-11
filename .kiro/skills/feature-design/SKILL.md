@@ -61,11 +61,13 @@ When a PM describes work to do, first determine the intent, then ask the appropr
 
 ## When to Skip Questions
 
-Start immediately if the PM:
-- Already provided full context (answers are obvious from the prompt)
-- Says "just do it" or "quick change" or "same as last time"
-- Is iterating on a previous change (follow-up prompt)
-- Gives a very specific instruction ("change the button color to red")
+Only skip questions if ALL of these are true:
+- The PM is iterating on a previous change (follow-up, not new work)
+- The instruction is very specific ("change the button color to red")
+- The PM explicitly says "just do it" or "no questions"
+
+For NEW features: ALWAYS ask questions first, even if the prompt has lots of detail.
+The questions help YOU (Kiro) confirm assumptions and help the PM think through edge cases they may have missed.
 
 ---
 

@@ -28,17 +28,29 @@ Your lab runs in a remote desktop (DCV). Copy/paste works differently than norma
 
 ### Pasting text FROM your laptop INTO the remote desktop
 
-1. **Copy** the text on your laptop as usual (Ctrl+C / Cmd+C)
-2. **Click inside the DCV window** (the remote desktop)
+**macOS:**
+1. Copy text on your Mac as usual (Cmd+C)
+2. Click inside the DCV window
+3. Use **Ctrl+Shift+V** to paste (NOT Cmd+V)
+
+**Windows:**
+1. Copy text on your PC as usual (Ctrl+C)
+2. Click inside the DCV window
 3. Use **Ctrl+Shift+V** to paste (NOT Ctrl+V)
 
 > 💡 You'll need this immediately to paste your **password** at login.
 
 ### Copying text FROM the remote desktop TO your laptop
 
+**macOS:**
 1. Select text in the remote desktop
-2. Use **Ctrl+Shift+C** to copy (NOT Ctrl+C)
-3. Switch to your laptop — it's now in your clipboard
+2. Use **Ctrl+Shift+C** to copy
+3. Switch to your Mac — paste with Cmd+V as usual
+
+**Windows:**
+1. Select text in the remote desktop
+2. Use **Ctrl+Shift+C** to copy
+3. Switch to your PC — paste with Ctrl+V as usual
 
 ### If paste doesn't work
 
@@ -48,11 +60,14 @@ Your lab runs in a remote desktop (DCV). Copy/paste works differently than norma
 
 ### Quick Reference
 
-| Direction | Shortcut |
-|---|---|
-| Laptop → Remote Desktop | Ctrl+Shift+V |
-| Remote Desktop → Laptop | Ctrl+Shift+C |
-| Inside remote desktop (normal) | Ctrl+C / Ctrl+V (works as usual) |
+| Direction | macOS | Windows |
+|---|---|---|
+| Copy on your laptop | Cmd+C | Ctrl+C |
+| Paste INTO remote desktop | Ctrl+Shift+V | Ctrl+Shift+V |
+| Copy FROM remote desktop | Ctrl+Shift+C | Ctrl+Shift+C |
+| Inside remote desktop (normal) | Ctrl+C / Ctrl+V | Ctrl+C / Ctrl+V |
+
+> ⚠️ Inside the remote desktop, always use **Ctrl** (not Cmd), even on Mac.
 
 ---
 
@@ -393,7 +408,9 @@ Open `scenarios/` in your project and read the capstone scenario. Or the trainer
 
 ## Quick Reference
 
-### Keyboard Shortcuts
+### Keyboard Shortcuts (inside remote desktop)
+
+> ⚠️ Inside the remote desktop, always use **Ctrl** — even if you're on a Mac.
 
 | Shortcut | Action |
 |---|---|
@@ -401,6 +418,8 @@ Open `scenarios/` in your project and read the capstone scenario. Or the trainer
 | Ctrl+` | Toggle terminal |
 | Ctrl+Shift+R | Hard refresh browser |
 | Ctrl+Z | Undo in editor |
+| Ctrl+Shift+V | Paste from your laptop |
+| Ctrl+Shift+C | Copy to your laptop |
 | # | Attach context to prompt (files, steering) |
 
 ### Useful Prompts

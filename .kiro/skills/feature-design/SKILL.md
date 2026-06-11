@@ -1,6 +1,6 @@
 ---
 name: feature-design
-description: Feature design, prototyping, fixing, improving, and debugging UI. Use when a PM wants to create a new feature, fix a bug, improve UX, or debug an issue in the frontend. ALWAYS ask clarifying questions before making changes.
+description: Feature design and requirements gathering. Use when a PM mentions a feature request, customer ask, new feature, product improvement, or wants to plan/scope/design any feature work. ALWAYS ask clarifying questions before producing output.
 ---
 
 # Feature Work: Design, Fix, Improve, Debug

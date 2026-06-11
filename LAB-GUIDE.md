@@ -188,6 +188,9 @@ Your lab runs in a remote desktop (DCV). Copy/paste works differently than norma
 - [ ] Browser showing dark security console at localhost:5173
 - [ ] Chat panel visible (Ctrl+L)
 
+> ⚠️ **Important:** If Kiro asks "Would you like to start a dedicated spec session?" — click **No**.
+> We're using **vibe mode** (chat) today, not spec mode. Just keep chatting normally.
+
 **If all 4 are checked: 👍 in Webex chat. If stuck: share your screen.**
 
 ---

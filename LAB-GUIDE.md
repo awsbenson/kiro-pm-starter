@@ -79,6 +79,7 @@ Your lab runs in a remote desktop (DCV). Copy/paste works differently than norma
 | **Username** | (provided by trainer) |
 | **Password** | (provided by trainer) |
 | **Browser** | Use the DCV link in Chrome/Edge on your computer |
+| **Starter Kit Repo** | https://github.com/awsbenson/kiro-pm-starter |
 
 ---
 

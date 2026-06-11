@@ -240,6 +240,7 @@ Save these requirements to a file called requirements.txt
 
 ### 💡 Tips
 - Don't worry about being "right" — there are no wrong answers
+- If Kiro asks "Would you like to start a dedicated spec session?" → click **No** (stay in chat mode)
 - If Kiro's output isn't great, tell it: "That's not quite right. The priority should be higher because..."
 - Kiro improves when you give feedback
 
